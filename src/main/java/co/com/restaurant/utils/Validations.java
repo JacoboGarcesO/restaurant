@@ -89,6 +89,23 @@ public class Validations {
         return text.trim();
     }
 
+    public static String readStringDefault(String message, String def) {
+        String text = "";
+        try {
+            text = JOptionPane.showInputDialog(message, def);
+
+            if (text.trim().equals("")) {
+                JOptionPane.showMessageDialog(null,"[ERROR]: El texto ingresado no puede esta vacío.");
+                readString(message);
+            }
+        } catch (Exception exception) {
+            JOptionPane.showMessageDialog(null,"[ERROR]: " + exception);
+            readString(message);
+        }
+
+        return text.trim();
+    }
+
     public static Integer getActualYear() {
         Calendar date = Calendar.getInstance();
         return date.get(Calendar.YEAR);
@@ -109,7 +126,7 @@ public class Validations {
      * Retorno: Dato lógico verdadero si el número es menor. Dato lógico falso si el número es mayor o igual que 0.
      * */
     private static boolean numberIsLessThanToZero(Integer number) {
-        return number < 0;
+        return number <= 0;
     }
 
     /*

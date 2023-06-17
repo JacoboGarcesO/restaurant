@@ -12,9 +12,7 @@ public class Client extends BaseEntity {
     private Food preferences;
     private Food restrictions;
 
-    public Client() {
-        this.clientId = IdGenerator.uuid();
-    }
+    public Client() { }
 
     public Client(String clientId, String name, String email, String address) {
         this.clientId = clientId;
@@ -85,12 +83,13 @@ public class Client extends BaseEntity {
 
     @Override
     public Client fill() {
+        this.clientId = IdGenerator.uuid();
         this.name = Validations.readString("Ingrese el nombre del cliente, por favor: ");
         this.email = Validations.readString("Ingrese el correo del cliente, por favor: ");
         this.address = Validations.readString("Ingrese la dirección del cliente, por favor: ");
         this.preferences = new Food();
         this.restrictions = new Food();
-        return this;
+        return new Client(clientId, name, email, address);
     }
 
     @Override

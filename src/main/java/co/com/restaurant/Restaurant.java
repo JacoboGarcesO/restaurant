@@ -1,6 +1,7 @@
 package co.com.restaurant;
 
 import co.com.restaurant.controllers.client.ClientFileController;
+import co.com.restaurant.controllers.client.ClientMatrizController;
 import co.com.restaurant.controllers.optionsMenu.OptionsMenuFileController;
 import co.com.restaurant.utils.Validations;
 import co.com.restaurant.utils.constants.OptionsMenuType;
@@ -12,10 +13,12 @@ public class Restaurant {
 
     private OptionsMenuFileController optionsMenuFileController;
     private ClientFileController clientFileController;
+    private ClientMatrizController clientMatrizController;
 
     public Restaurant() {
         this.optionsMenuFileController = new OptionsMenuFileController();
         this.clientFileController = new ClientFileController();
+        this.clientMatrizController = new ClientMatrizController();
     }
 
     public void startApplication() {
@@ -159,6 +162,28 @@ public class Restaurant {
             option = Validations.readIntegerInRange(this.getOptionsMainMenu(3), 1, 7);
             switch (option) {
                 case 1:
+                    Integer caseOption;
+
+                    do {
+                        caseOption = Validations.readIntegerInRange(this.getOptionsMatricesMenu(1), 1, 6);
+                        switch (caseOption) {
+                            case 1:
+                                this.clientMatrizController.create();
+                                break;
+                            case 2:
+                                this.clientMatrizController.showPerRows();
+                                break;
+                            case 3:
+                                this.clientMatrizController.showPerColumns();
+                                break;
+                            case 4:
+                                this.clientMatrizController.getClientById("Ingresa el id del cliente que deseas buscar");
+                                break;
+                            case 5:
+                                this.clientMatrizController.updateClient();
+                                break;
+                        }
+                    } while (caseOption != 6);
                     break;
                 case 2:
                     break;

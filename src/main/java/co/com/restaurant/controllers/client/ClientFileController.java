@@ -96,9 +96,9 @@ public class ClientFileController {
             return;
         }
 
-        client.setName(Validations.readString("El nombre actual del cliente es " + client.getName() + ", ingrese el nuevo nombre que desee o deje el mismo"));
-        client.setEmail(Validations.readString("El correo actual del cliente es " + client.getEmail() + ", ingrese el nuevo correo que desee o deje el mismo"));
-        client.setAddress(Validations.readString("La dirección actual del cliente es " + client.getAddress() + ", ingrese la nueva dirección que desee o deje la misma"));
+        client.setName(Validations.readStringDefault("Nombre del cliente: ", client.getName()));
+        client.setEmail(Validations.readStringDefault("Correo del cliente: ", client.getEmail()));
+        client.setAddress(Validations.readStringDefault("Dirección del cliente: ", client.getAddress()));
 
         for (int i = 0; i < clients.length; i++) {
             if (client.getClientId().equals(clients[i].getClientId())) {
