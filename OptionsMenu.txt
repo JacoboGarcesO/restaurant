@@ -1,0 +1,37 @@
+PRINCIPAL, MENU PRINCIPAL|1. Manejo de archivos.|2. Manejo de Matrices.|3. Manejo de Listas Dobles.|4. Manejo de Pilas.|5. Manejo de Colas.|6. Ejercicios con combinacion de estructuras.|7. Terminar.
+ARCHIVOS, MENU ARCHIVOS|1. CRUD de Clientes.|2. CRUD de repartidores.|3. CRUD de platos.|4. CRUD de planes.|5. CRUD de menús.|6. CRUD de preparaciones.|7. Volver al principal.
+ARCHIVOS_CLIENTES, MENU CRUD DE ARCHIVO DE CLIENTES|1. Ingresar clientes al archivo.|2. Mostrar todos los clientes.|3. Consultar un cliente por id.|4. Actualizar un cliente.|5. Eliminar un cliente.|6. Volver al menú de archivos.
+ARCHIVOS_REPARTIDORES, MENU CRUD DE ARCHIVO DE REPARTIDORES|1. Ingresar repartidores al archivo.|2. Mostrar todos los repartidores.|3. Consultar un repartidor por id.|4. Actualizar un repartidor.|5. Eliminar un repartidor.|6. Volver al menú de archivos.
+ARCHIVOS_PLATOS, MENU CRUD DE ARCHIVO DE PLATOS|1. Ingresar platos al archivo.|2. Mostrar todos los platos.|3. Consultar un plato por id.|4. Actualizar un plato.|5. Eliminar un plato.|6. Volver al menú de archivos.
+ARCHIVOS_PLANES, MENU CRUD DE ARCHIVO DE PLANES|1. Ingresar planes al archivo.|2. Mostrar todos los planes.|3. Consultar un plan por id.|4. Actualizar un plan.|5. Eliminar un plan|6. Volver al menú de archivos.
+ARCHIVOS_MENUS, MENU CRUD DE ARCHIVO DE MENÚS|1. Ingresar menús al archivo.|2. Mostrar todos los menús.|3. Consultar un menú por id.|4. Actualizar un menú.|5. Eliminar un menú|6. Volver al menú de archivos.
+ARCHIVOS_PREPARACIONES, MENU CRUD DE ARCHIVO DE PREPARACIONES|1. Ingresar preparaciones al archivo.|2. Mostrar todas las preparaciones.|3. Consultar una preparación por id.|4. Actualizar una preparación.|5. Eliminar una preparación.|6. Volver al menú de archivos.
+MATRICES, MENU MATRICES|1. CRUD de Clientes.|2. CRUD de repartidores.|3. CRUD de platos.|4. CRUD de planes.|5. CRUD de menús.|6. CRUD de preparaciones.|7. Volver al principal.
+MATRICES_CLIENTES, MENU CRUD DE MATRIZ DE CLIENTES|1. Ingresar clientes a la matriz.|2. Mostrar todos los clientes.|3. Consultar un cliente por id.|4. Actualizar un cliente.|5. Volver al menú de matrices.
+MATRICES_REPARTIDORES, MENU CRUD DE MATRIZ DE REPARTIDORES|1. Ingresar repartidores a la matriz.|2. Mostrar todos los repartidores.|3. Consultar un repartidor por id.|4. Actualizar un repartidor.|5. Volver al menú de matrices.
+MATRICES_PLATOS, MENU CRUD DE MATRIZ DE PLATOS|1. Ingresar platos a la matriz.|2. Mostrar todos los platos.|3. Consultar un plato por id.|4. Actualizar un plato.|5. Volver al menú de matrices.
+MATRICES_PLANES, MENU CRUD DE MATRIZ DE PLANES|1. Ingresar a la matriz.|2. Mostrar todos los planes.|3. Consultar un plan por id.|4. Actualizar un plan.|5. Volver al menú de matrices.
+MATRICES_MENUS, MENU CRUD DE MATRIZ DE MENÚS|1. Ingresar menús a la matriz.|2. Mostrar todos los menús.|3. Consultar un menú por id.|4. Actualizar un menú.|5. Volver al menú de matrices.
+MATRICES_PREPARACIONES, MENU CRUD DE MATRIZ DE PREPARACIONES|1. Ingresar preparaciones a la matriz.|2. Mostrar todas las preparaciones.|3. Consultar una preparación por id.|4. Actualizar una preparación.|5. Volver al menú de matrices.
+LISTAS_DOBLES, MENU LISTAS DOBLES|1. CRUD de Clientes.|2. CRUD de repartidores.|3. CRUD de platos.|4. CRUD de planes.|5. CRUD de menús.|6. CRUD de preparaciones.|7. Volver al principal.
+LISTAS_DOBLES_CLIENTES, MENU CRUD DE LISTA DOBLE DE CLIENTES|1. Ingresar clientes a la lista doble.|2. Mostrar todos los clientes.|3. Consultar un cliente por id.|4. Actualizar un cliente.|5. Volver al menú de listas dobles.
+LISTAS_DOBLES_REPARTIDORES, MENU CRUD DE LISTA DOBLE DE REPARTIDORES|1. Ingresar repartidores a la lista doble.|2. Mostrar todos los repartidores.|3. Consultar un repartidor por id.|4. Actualizar un repartidor.|5. Volver al menú de listas dobles.
+LISTAS_DOBLES_PLATOS, MENU CRUD DE LISTA DOBLE DE PLATOS|1. Ingresar platos a la lista doble.|2. Mostrar todos los platos.|3. Consultar un plato por id.|4. Actualizar un plato.|5. Volver al menú de listas dobles.
+LISTAS_DOBLES_PLANES, MENU CRUD DE LISTA DOBLE DE PLANES|1. Ingresar planes a la lista doble.|2. Mostrar todos los planes.|3. Consultar un plan por id.|4. Actualizar un plan.|5. Volver al menú de listas dobles.
+LISTAS_DOBLES_MENUS, MENU CRUD DE LISTA DOBLE DE MENÚS|1. Ingresar menús a la lista doble.|2. Mostrar todos los menús.|3. Consultar un menú por id.|4. Actualizar un menú.|5. Volver al menú de listas dobles.
+LISTAS_DOBLES_PREPARACIONES, MENU CRUD DE LISTA DOBLE DE PREPARACIONES|1. Ingresar preparaciones a la lista doble.|2. Mostrar todas las preparaciones.|3. Consultar una preparación por id.|4. Actualizar una preparación.|5. Volver al menú de listas dobles.
+PILAS, MENU PILAS|1. CRUD de Clientes.|2. CRUD de repartidores.|3. CRUD de platos.|4. CRUD de planes.|5. CRUD de menús.|6. CRUD de preparaciones.|7. Volver al principal.
+PILAS_CLIENTES, MENU CRUD PILA DE CLIENTES|1. Ingresar clientes a la pila.|2. Mostrar todos los clientes.|3. Consultar un cliente por id.|4. Actualizar un cliente.|5. Volver al menú de pilas.
+PILAS_REPARTIDORES, MENU CRUD PILA DE REPARTIDORES|1. Ingresar repartidores a la pila.|2. Mostrar todos los repartidores.|3. Consultar un repartidor por id.|4. Actualizar un repartidor.|5. Volver al menú de pilas.
+PILAS_PLATOS, MENU CRUD PILA DE PLATOS|1. Ingresar platos a la pila.|2. Mostrar todos los platos.|3. Consultar un plato por id.|4. Actualizar un plato.|5. Volver al menú de pilas.
+PILAS_PLANES, MENU CRUD PILA DE PLANES|1. Ingresar planes a la pila.|2. Mostrar todos los planes.|3. Consultar un plan por id.|4. Actualizar un plan.|5. Volver al menú de pilas.
+PILAS_MENUS, MENU CRUD PILA DE MENÚS|1. Ingresar menús a la pila.|2. Mostrar todos los menús.|3. Consultar un menú por id.|4. Actualizar un menú.|5. Volver al menú de pilas.
+PILAS_PREPARACIONES, MENU CRUD PILA DE PREPARACIONES|1. Ingresar preparaciones a la pila.|2. Mostrar todas las preparaciones.|3. Consultar una preparación por id.|4. Actualizar una preparación.|5. Volver al menú de pilas.
+COLAS, MENU COLAS|1. CRUD de Clientes.|2. CRUD de repartidores.|3. CRUD de platos.|4. CRUD de planes.|5. CRUD de menús.|6. CRUD de preparaciones.|7. Volver al principal.
+COLAS_CLIENTES, MENU CRUD COLA DE CLIENTES|1. Ingresar clientes a la cola.|2. Mostrar todos los clientes.|3. Consultar un cliente por id.|4. Actualizar un cliente.|5. Volver al menú de colas.
+COLAS_REPARTIDORES, MENU CRUD COLA DE REPARTIDORES|1. Ingresar repartidores a la cola.|2. Mostrar todos los repartidores.|3. Consultar un repartidor por id.|4. Actualizar un repartidor.|5. Volver al menú de colas.
+COLAS_PLATOS, MENU CRUD COLA DE PLATOS|1. Ingresar platos a la cola.|2. Mostrar todos los platos.|3. Consultar un plato por id.|4. Actualizar un plato.|5. Volver al menú de colas.
+COLAS_PLANES, MENU CRUD COLA DE PLANES|1. Ingresar planes a la cola.|2. Mostrar todos los planes.|3. Consultar un plan por id.|4. Actualizar un plan.|5. Volver al menú de colas.
+COLAS_MENUS, MENU CRUD COLA DE MENÚS|1. Ingresar menús a la cola.|2. Mostrar todos los menús.|3. Consultar un menú por id.|4. Actualizar un menú.|5. Volver al menú de colas.
+COLAS_PREPARACIONES, MENU CRUD COLA DE PREPARACIONES|1. Ingresar preparaciones a la cola.|2. Mostrar todas las preparaciones.|3. Consultar una preparación por id.|4. Actualizar una preparación.|5. Volver al menú de colas.
+COMBINADAS, MENU ESTRUCTURAS COMBINADAS|PENDING.
