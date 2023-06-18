@@ -25,8 +25,8 @@ public class DoubleList {
             this.setStart(new Node(object, null, null));
             this.setEnd(this.getStart());
         } else {
-            this.getStart().setNext(new Node(object, null, this.getStart()));
-            this.setStart(this.getStart().getNext());
+            this.getStart().setBefore(new Node(object, this.getStart(), null ));
+            this.setStart(this.getStart().getBefore());
         }
     }
 
@@ -57,6 +57,7 @@ public class DoubleList {
     }
 
     public boolean objectInList(DoubleList doubleList, String id) {
+        if (this.isEmpty()) { return false; }
         this.auxiliary1 = doubleList.getStart();
         String auxiliaryId = ((Client) (this.auxiliary1.getObject())).getClientId();
 
@@ -67,7 +68,7 @@ public class DoubleList {
             }
         }
 
-        return this.auxiliary1 == null;
+        return this.auxiliary1 != null;
     }
 
     public DoubleList insertBefore(DoubleList doubleList, Object object, String id) {
@@ -76,7 +77,7 @@ public class DoubleList {
             return doubleList;
         }
 
-        if (this.objectInList(doubleList, id)) {
+        if (!this.objectInList(doubleList, id)) {
             JOptionPane.showMessageDialog(null,"[ERROR]: El objeto no se encuentra en la lista.");
             return doubleList;
         }
@@ -97,7 +98,7 @@ public class DoubleList {
             return doubleList;
         }
 
-        if (this.objectInList(doubleList, id)) {
+        if (!this.objectInList(doubleList, id)) {
             JOptionPane.showMessageDialog(null,"[ERROR]: El objeto no se encuentra en la lista.");
             return doubleList;
         }
@@ -105,7 +106,7 @@ public class DoubleList {
         if (doubleList.getAuxiliary1() == this.getEnd()) {
             doubleList.insertAtEnd(doubleList, object);
         } else {
-            this.auxiliary1.setBefore(new Node(object, this.auxiliary1.getNext(), this.auxiliary1));
+            this.auxiliary1.setNext(new Node(object, this.auxiliary1.getNext(), this.auxiliary1));
             this.auxiliary1.getNext().getNext().setBefore(this.auxiliary1.getNext());
         }
 
@@ -186,15 +187,15 @@ public class DoubleList {
         return auxiliary;
     }
 
-    public Object unlockElement(DoubleList doubleList, String id) {
+    public void unlockElement(DoubleList doubleList, String id) {
         if (this.isEmpty()) {
             JOptionPane.showMessageDialog(null,"[ERROR]: La lista está vacía.");
-            return doubleList;
+            return;
         }
 
-        if (this.objectInList(doubleList, id)) {
+        if (!this.objectInList(doubleList, id)) {
             JOptionPane.showMessageDialog(null,"[ERROR]: El objeto no se encuentra en la lista.");
-            return doubleList;
+            return;
         }
 
         if (this.auxiliary1 == doubleList.getStart()) {
@@ -208,8 +209,6 @@ public class DoubleList {
                 this.auxiliary1.finalize();
             }
         }
-
-        return doubleList;
     }
 
     public Node getStart() {

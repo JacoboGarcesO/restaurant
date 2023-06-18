@@ -1,5 +1,6 @@
 package co.com.restaurant;
 
+import co.com.restaurant.controllers.client.ClientDoubleListController;
 import co.com.restaurant.controllers.client.ClientFileController;
 import co.com.restaurant.controllers.client.ClientMatrizController;
 import co.com.restaurant.controllers.optionsMenu.OptionsMenuFileController;
@@ -14,11 +15,13 @@ public class Restaurant {
     private OptionsMenuFileController optionsMenuFileController;
     private ClientFileController clientFileController;
     private ClientMatrizController clientMatrizController;
+    private ClientDoubleListController clientDoubleListController;
 
     public Restaurant() {
         this.optionsMenuFileController = new OptionsMenuFileController();
         this.clientFileController = new ClientFileController();
         this.clientMatrizController = new ClientMatrizController();
+        this.clientDoubleListController = new ClientDoubleListController();
     }
 
     public void startApplication() {
@@ -205,6 +208,34 @@ public class Restaurant {
             option = Validations.readIntegerInRange(this.getOptionsMainMenu(4), 1, 7);
             switch (option) {
                 case 1:
+                    Integer caseOption;
+
+                    do {
+                        caseOption = Validations.readIntegerInRange(this.getOptionsDoubleListsMenu(1), 1, 8);
+                        switch (caseOption) {
+                            case 1:
+                                this.clientDoubleListController.create();
+                                break;
+                            case 2:
+                                this.clientDoubleListController.showFromStart();
+                                break;
+                            case 3:
+                                this.clientDoubleListController.showFromEnd();
+                                break;
+                            case 4:
+                                this.clientDoubleListController.updateClient();
+                                break;
+                            case 5:
+                                this.clientDoubleListController.insertBefore();
+                                break;
+                            case 6:
+                                this.clientDoubleListController.insertAfter();
+                                break;
+                            case 7:
+                                this.clientDoubleListController.delete();
+                                break;
+                        }
+                    } while (caseOption != 8);
                     break;
                 case 2:
                     break;
